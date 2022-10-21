@@ -41,7 +41,6 @@ const fetchData = async () =>{
         // push
         allItems.push(tarjeta);
     });
-
     appNode.append(...allItems);
 }
 fetchData();

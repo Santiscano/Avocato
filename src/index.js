@@ -28,7 +28,7 @@ const fetchData = async () => {
     const response = await fetch(URL);
     const datos = await response.json();
     const allItems = []; // esto esta vacio porque se llenara con el map
-    const renderAll = datos.data.map(item => {
+    const renderAll = datos.data.map( item => {
 
         // imagen
         const imagen = document.createElement('img');   // document.body.appendChild(imagen);
@@ -42,7 +42,7 @@ const fetchData = async () => {
 
         // precio
         const precio = document.createElement('div');   // document.body.appendChild(precio); remplazo estos 3 por 1 append
-        precio.textContent = formatPrice(item.price);                // renderizo precio
+        precio.textContent = formatPrice(item.price);   // renderizo precio
         precio.className = "text-gray-600"
 
         // Creamos un contenedor el título y el precio
